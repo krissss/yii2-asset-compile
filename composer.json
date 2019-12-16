@@ -1,0 +1,21 @@
+{
+    "name": "kriss/yii2-asset-compile",
+    "description": "Yii2 Asset Compile",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "kriss",
+            "email": "462679766@qq.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "kriss\\assetCompile\\": "src"
+        }
+    }
+}
