@@ -100,7 +100,7 @@ in `package.json`
 }
 ```
 
-3. Add Less Command
+3. 增加 Less 命令
 
 ```bash
 'commands' => [
@@ -113,3 +113,32 @@ in `package.json`
 > - [less](http://lesscss.cn/)
 > - [less plugin](http://lesscss.cn/usage/#plugins)
 > - [browsersList for autoPrefix](https://github.com/postcss/autoprefixer#browsers)
+
+### Stylus
+
+1. 安装依赖
+
+```bash
+yarn add stylus --dev
+```
+
+2. 增加 Stylus 命令
+
+```bash
+'commands' => [
+    'styl' => ['css', '@npm/.bin/stylus --compress < {from} > {to}'],
+    // others
+],
+```
+
+3. Stylus 中的 import
+
+使用`~`表示当前文件所在位置
+
+```bash
+@import "~/../common/flex.styl"
+```
+
+> Links
+> - [stylus](https://stylus-lang.com/)
+> - [stylus command](https://stylus-lang.com/docs/executable.html)
